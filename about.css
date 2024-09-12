@@ -1,0 +1,175 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    background-color: beige;
+}
+
+nav {
+    z-index: 01;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(255, 211, 153);
+    list-style: none;
+
+
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.menuitem {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.project {
+    border-left: solid 0.1px black;
+    border-right: solid 0.1px black;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.menuitem:hover {
+    background-color: rgb(213, 141, 46);
+    transition: 0.5s;
+}
+
+.about {
+    background-color: rgb(213, 141, 46);
+
+}
+
+.body {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    margin-top: 20px;
+}
+
+.me {
+    height: auto;
+    width: auto;
+    background-color: rgb(232, 202, 142);
+
+    border: solid 2px white;
+    padding: 5px;
+}
+
+.name {
+    font-size: xxx-large;
+}
+
+.description {
+
+    font-size: larger;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+
+
+}
+
+.social {
+    height: auto;
+    width: auto;
+    background-color: rgb(232, 202, 142);
+
+    border: solid 2px white;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.socialtext {
+    font-size: larger;
+}
+
+.social:hover {
+    background-color: rgb(233, 175, 61);
+    transition: 0.5s;
+}
+
+.gitimg,
+.linkedinimg {
+    border-radius: 20%;
+}
+
+
+
+@media only screen and (max-width: 580px) {
+    .socials {
+        display: block;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .social {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 80%;
+
+
+    }
+
+    .linkedinimg {
+        height: 225;
+        width: auto;
+
+
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .linkedinimg {
+        height: 150px;
+        width: auto;
+    }
+
+    nav {
+
+        font-size: smaller;
+        width: 100%;
+
+    }
+
+    .name {
+        font-size: x-large;
+
+    }
+
+    .description {
+        font-size: medium;
+    }
+}

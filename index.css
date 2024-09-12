@@ -1,0 +1,106 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    background-color: beige;
+}
+
+nav {
+    z-index: 01;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(255, 211, 153);
+    list-style: none;
+
+
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.menuitem {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.project {
+    border-left: solid 0.1px black;
+    border-right: solid 0.1px black;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.menuitem:hover {
+    background-color: rgb(213, 141, 46);
+
+    transition: 0.5s;
+
+}
+
+.body {
+    height: auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 2%;
+    border: solid 2px white;
+    position: absolute;
+    top: 10%;
+    background-color: rgb(232, 202, 142);
+    height: auto;
+    width: 80%;
+
+}
+
+.welcome {
+    font-size: xxx-large;
+
+}
+
+.text {
+    font-size: x-large;
+}
+
+.home {
+    background-color: rgb(213, 141, 46);
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+    nav {
+
+        font-size: smaller;
+        width: 100%;
+
+    }
+
+    .welcome {
+        font-size: xx-large;
+
+    }
+
+    .text {
+        font-size: medium;
+    }
+
+}
